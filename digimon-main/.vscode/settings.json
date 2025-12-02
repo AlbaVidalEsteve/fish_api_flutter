@@ -1,0 +1,9 @@
+{
+  "cmake.ignoreCMakeListsMissing": true,
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "debug.allowBreakpointsEverywhere": true,
+  "debug.hideLauncherWhileDebugging": false,
+  "debug.showBreakpointsInOverviewRuler": true,
+  "dart.debugSdkLibraries": true,
+  "dart.debugExternalPackageLibraries": true
+}
