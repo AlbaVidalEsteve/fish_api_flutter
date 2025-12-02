@@ -123,9 +123,15 @@ class _FishCardState extends State<FishCard> {
   }
 
   showFishDetailPage() {
-    Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-      return FishDetailPage(fish);
-    }));
+    Navigator.of(context)
+        .push(MaterialPageRoute(
+          builder: (context) => FishDetailPage(fish),
+        ))
+        .then((_) {
+          if (mounted) {
+            setState(() {});   // ✔ permitido: se ejecuta después de volver
+          }
+        });
   }
 
   @override

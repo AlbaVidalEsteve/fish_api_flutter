@@ -58,6 +58,7 @@ class _FishDetailPageState extends State<FishDetailPage> {
     } else {
       setState(() {
         widget.fish.rating = _sliderValue.toInt();
+      
       });
       Future.delayed(const Duration(milliseconds: 100), () {
         Navigator.of(context).pop(widget.fish);
