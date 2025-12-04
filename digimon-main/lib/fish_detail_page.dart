@@ -26,7 +26,7 @@ class _FishDetailPageState extends State<FishDetailPage> {
               Flexible(
                 flex: 1,
                 child: Slider(
-                  activeColor: const Color(0xFF0B479E),
+                  activeColor: const Color.fromARGB(255, 5, 146, 14),
                   min: 0.0,
                   max: 10.0,
                   value: _sliderValue,
@@ -142,7 +142,7 @@ class _FishDetailPageState extends State<FishDetailPage> {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 32.0),
       decoration: const BoxDecoration(
-        color: Color(0xFFABCAED),
+        color: Color.fromARGB(255, 187, 213, 172),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -168,9 +168,9 @@ class _FishDetailPageState extends State<FishDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFABCAED),
+      backgroundColor: const Color.fromARGB(255, 187, 213, 172),
       appBar: AppBar(
-        backgroundColor: const Color(0xFF0B479E),
+        backgroundColor: const Color.fromARGB(255, 67, 158, 11),
         title: Text('Meet ${widget.fish.name}'),
       ),
       body: ListView(

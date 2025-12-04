@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 class FishCard extends StatefulWidget {
   final Fish fish;
-
   const FishCard(this.fish, {super.key});
 
   @override
@@ -52,7 +51,7 @@ class _FishCardState extends State<FishCard> {
               ])),
       alignment: Alignment.center,
       child: const Text(
-        'DIGI',
+        'Fish',
         textAlign: TextAlign.center,
       ),
     );
@@ -129,7 +128,7 @@ class _FishCardState extends State<FishCard> {
         ))
         .then((_) {
           if (mounted) {
-            setState(() {});   // ✔ permitido: se ejecuta después de volver
+            setState(() {});
           }
         });
   }

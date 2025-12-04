@@ -40,7 +40,8 @@ class _AddFishFormPageState extends State<AddFishFormPage> {
               padding: const EdgeInsets.only(bottom: 8.0),
               child: TextField(
                 controller: nameController,
-                style: const TextStyle(decoration: TextDecoration.none, color: Colors.black),
+                style: const TextStyle(
+                    decoration: TextDecoration.none, color: Colors.black),
                 // onChanged: (v) => nameController.text = v,
                 decoration: const InputDecoration(
                   labelText: 'Fish Name',
