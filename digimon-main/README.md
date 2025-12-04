@@ -1,4 +1,4 @@
-# digimon
+# Animal Crossing Fish App
 
 A new Flutter project.
 
